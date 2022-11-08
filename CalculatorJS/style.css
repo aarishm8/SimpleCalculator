@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --backgroundColor : #031b28;
+    --accentColor : #0b324b;
+    --red : #ba2416;
+    --green : #2a9a1e;
+    --calculatorColor : #0b2838;
+    --grey : #242424;
+    --yellow: #e89c31;
+    --inputColor: #0b324b;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--calculatorColor);
+    border-radius: 20px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    row-gap: 10px;
+    column-gap: 30px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons > button{
+    width: 60px;
+    font-size: 2rem;
+    height: 60px;
+    cursor: pointer;
+}
+
+.button > button:hover{
+    opacity: 0.6;
+
+}
+
+#input{
+    width: 100%;
+    background-color: var(--accentColor);
+    pointer-events: none;
+    border: none;
+    border-radius: 20px 0px 0px;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+}
+
+.btn{
+    border: none;
+    color: #fff;
+}
+
+.red{
+    background-color: var(--red);
+}
+
+.grey{
+    background-color: var(--grey);
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
